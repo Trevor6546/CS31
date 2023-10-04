@@ -1,0 +1,5 @@
+The unusual input that I included in step 5 was telling the program that I surveyed 40 people and that 100 of them liked Jasmine rice and that 200 of them liked Basmati rice. This caused the percentages of those who liked each type of rice to not add up to 100%. Additionally both percentages were greater than 100%.
+
+The error I introduced into logic_error.cpp (step 6) was switching the > to a < on line 30. This caused the program to incorrectly tell me which type of rice was more popular.
+
+The two errors I introduced into compile_error.cpp were changing the variable names on 30 from preferJasmine and preferBasmati to PreferBasmati and PreferJasmine, since these are unknown variables a complier error was thrown. The other error I introduced was removing the line that defined the integer numberSurveyed. This threw a complier error once line 13 was reached as there was no numberSurveyed variable to store the input in.
