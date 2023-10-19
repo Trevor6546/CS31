@@ -1,0 +1,26 @@
+1. One main notable problem that I overcame was how to format the output. I have my fine variable listed as a double, and when I would output it the result would often not go to three decimal places. For example, if the result was 25.730, the result woud put output as 25.73, without the additional 0. I fixed this but adding << fixed << setprecision(3) before my fine value. Another problem I overcame was the best way to use if statements when computing the fine. My first approach was to start with the lowest fine category and go up from there, but I found that there were many logic flaws with this approach. Instead of spending time fixing it, I realized that a much better approach would just be to start with the 150 fine rate, and go down from there. I created variables that would represent the maximum fine on the rate of 0 to 60 million and the maximum on 60 to 150 million for both if the location is florida/new york and if it isn't. 
+
+2. Test Cases:
+No identification is given  ( , 150, florida)
+A negative "overstated amount" is given     (Novak Estate, -10, california)
+No "overstated amount" is given     (Novak Estate, , california)
+No location is given    (Novak Estate, 100, )
+The "overstated amount" is 0    (Novak Estate, 0, california)
+An "overstated amount" of 90 is given with a location of florida    (Novak Estate, 90, florida)   12.066
+An "overstated amount" of 90 is given with a location of new york    (Novak Estate, 90, new york)
+An "overstated amount" of 90 is given with a location of california    (Novak Estate, 90, california)  11.256
+An "overstated amount" of 200 is given with a location of florida    (Novak Estate, 200, florida)   33.366
+An "overstated amount" of 200 is given with a location of new york    (Novak Estate, 200, new york)
+An "overstated amount" of 200 is given with a location of california    (Novak Estate, 200, california)  30.936
+An "overstated amount" of 60 is given with a location of california    (Novak Estate, 60, california) 6.666
+An "overstated amount" of 60 is given with a location of new york    (Novak Estate, 60, new york)
+An "overstated amount" of 60 is given with a location of florida    (Novak Estate, 60, florida)
+An "overstated amount" of 150 is given with a location of california    (Novak Estate, 150, california)  20.436
+An "overstated amount" of 150 is given with a location of new york    (Novak Estate, 150, new york)  22.866
+An "overstated amount" of 150 is given with a location of florida    (Novak Estate, 150, florida)
+An "overstated amount" of 239.84 is given with a location of california   (Novak Estate, 239.84, california) 39.302
+An "overstated amount" of 239.84 is given with a location of florida   (Novak Estate, 239.84, florida)  41.732
+An "overstated amount" of 239.84 is given with a location of new york   (Novak Estate, 239.84, new york)
+An "overstated amount" of 239.843291 is given with a location of california   (Novak Estate, 239.843291, california) 39.303
+An "overstated amount" of 239.843291 is given with a location of florida   (Novak Estate, 239.843291, florida) 41.733
+An "overstated amount" of 239.843291 is given with a location of new york   (Novak Estate, 239.843291, new york)

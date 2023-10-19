@@ -1,0 +1,48 @@
+1. 
+####Start Program######
+endlendl
+grendel
+
+2. It prints a right triangle of '#'s, with the top having 1 '#' and the base having a number of '#' specified by the input. Additionally, the top '#' will be on the same line as the "Enter a number: ", since there is no endl statement.
+
+3.	
+	#include <iostream>
+	using namespace std;
+
+	int main()
+	{
+	    int side;
+
+	    cout << "Enter a number: ";
+	    cin >> side;
+
+            int i = 0;
+	    while(side--){
+                i++;
+                int temp = i;
+                while(temp--){
+                     cout << "#";
+                }
+                cout << endl;
+            }
+	}
+
+4.
+switch(codeSection){
+    case 281:
+        cout << "bigamy";
+        break;
+    case 321:
+    case 322:
+        cout << "selling illegal lottery tickets";
+        break;
+    case 383:
+        cout << "selling rancid butter";
+        break;
+    case 598:
+        cout << "injuring a bird in a public cemetary";
+        break;
+    default:
+        cout << "some other crime";
+        break;
+}
